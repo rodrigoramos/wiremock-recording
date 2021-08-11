@@ -5,7 +5,7 @@ using NUnit.Framework;
 using WireMock.Server;
 using WireMock.Settings;
 
-namespace Wiremock_Recording.Test
+namespace Wiremock_Playback.Test
 {
     public class ForecastPlaybackTests
     {
@@ -19,7 +19,7 @@ namespace Wiremock_Recording.Test
                 Urls = new[] {"http://localhost:9095/"},
             });
             
-            const string folder = "../../../Mappins";
+            const string folder = "../../../../Mappins";
             _mockServer.ReadStaticMappings(folder);
         }
 

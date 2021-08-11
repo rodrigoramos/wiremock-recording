@@ -1,0 +1,45 @@
+{
+  "Guid": "f6a4a875-40ad-4ac3-84f5-927f041fefa0",
+  "Title": "",
+  "Request": {
+    "Path": {
+      "Matchers": [
+        {
+          "Name": "WildcardMatcher",
+          "Pattern": "/WeatherForecast/tomorrow",
+          "IgnoreCase": false
+        }
+      ]
+    },
+    "Methods": [
+      "GET"
+    ],
+    "Headers": [
+      {
+        "Name": "Host",
+        "Matchers": [
+          {
+            "Name": "WildcardMatcher",
+            "Pattern": "localhost:9095",
+            "IgnoreCase": true
+          }
+        ]
+      }
+    ]
+  },
+  "Response": {
+    "StatusCode": 200,
+    "BodyAsJson": {
+      "date": "2021-08-12T11:08:22.9235102-03:00",
+      "temperatureC": 27,
+      "temperatureF": 80,
+      "summary": "Chilly"
+    },
+    "Headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Wed, 11 Aug 2021 14:08:22 GMT",
+      "Server": "Kestrel",
+      "Transfer-Encoding": "chunked"
+    }
+  }
+}

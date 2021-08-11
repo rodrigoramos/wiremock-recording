@@ -1,0 +1,71 @@
+{
+  "Guid": "3bc36445-a2b4-4cda-a69f-ea2094e54e83",
+  "Title": "",
+  "Request": {
+    "Path": {
+      "Matchers": [
+        {
+          "Name": "WildcardMatcher",
+          "Pattern": "/WeatherForecast",
+          "IgnoreCase": false
+        }
+      ]
+    },
+    "Methods": [
+      "GET"
+    ],
+    "Headers": [
+      {
+        "Name": "Host",
+        "Matchers": [
+          {
+            "Name": "WildcardMatcher",
+            "Pattern": "localhost:9095",
+            "IgnoreCase": true
+          }
+        ]
+      }
+    ]
+  },
+  "Response": {
+    "StatusCode": 200,
+    "BodyAsJson": [
+      {
+        "date": "2021-08-12T11:08:22.8444774-03:00",
+        "temperatureC": 51,
+        "temperatureF": 123,
+        "summary": "Scorching"
+      },
+      {
+        "date": "2021-08-13T11:08:22.8446275-03:00",
+        "temperatureC": 6,
+        "temperatureF": 42,
+        "summary": "Freezing"
+      },
+      {
+        "date": "2021-08-14T11:08:22.8446284-03:00",
+        "temperatureC": 51,
+        "temperatureF": 123,
+        "summary": "Sweltering"
+      },
+      {
+        "date": "2021-08-15T11:08:22.8446286-03:00",
+        "temperatureC": 54,
+        "temperatureF": 129,
+        "summary": "Scorching"
+      },
+      {
+        "date": "2021-08-16T11:08:22.8446288-03:00",
+        "temperatureC": -4,
+        "temperatureF": 25,
+        "summary": "Hot"
+      }
+    ],
+    "Headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Wed, 11 Aug 2021 14:08:22 GMT",
+      "Server": "Kestrel",
+      "Transfer-Encoding": "chunked"
+    }
+  }
+}

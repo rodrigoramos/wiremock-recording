@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiremock-Recording.Server.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiremock-Recording.Test", "..\test\Wiremock-Recording.Test\Wiremock-Recording.Test.csproj", "{0C37EFD7-7FFE-43EA-8345-F41918D30D7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wiremock-Playback.Test", "..\test\Wiremock-Playback.Test\Wiremock-Playback.Test.csproj", "{618BF01A-01AA-430C-B5CE-3058C9897FCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{0C37EFD7-7FFE-43EA-8345-F41918D30D7C}.Release|x64.Build.0 = Release|Any CPU
 		{0C37EFD7-7FFE-43EA-8345-F41918D30D7C}.Release|x86.ActiveCfg = Release|Any CPU
 		{0C37EFD7-7FFE-43EA-8345-F41918D30D7C}.Release|x86.Build.0 = Release|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Debug|x64.Build.0 = Debug|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Debug|x86.Build.0 = Debug|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Release|x64.ActiveCfg = Release|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Release|x64.Build.0 = Release|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Release|x86.ActiveCfg = Release|Any CPU
+		{618BF01A-01AA-430C-B5CE-3058C9897FCA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

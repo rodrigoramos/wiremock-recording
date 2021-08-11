@@ -13,19 +13,15 @@ namespace Wiremock_Recording.Test
 {
     public class ForecastRecordingTests
     {
-        private const string Folder = "../../../Mappins";
+        private const string Folder = "../../../../Mappins";
         private WireMockServer _mockServer;
         private WebApplicationFactory<Startup> _factory;
 
         [OneTimeSetUp]
         public void Setup()
         {
-            var files = Directory.GetFiles(Folder);
-            foreach (var filePath in files)
-            {
-                File.Delete(filePath);
-            }
-            
+            ClearPreviousStaticMappings();
+
             _factory = new WebApplicationFactory<Startup>(8000);
             _mockServer = WireMockServer.Start(new WireMockServerSettings
             {
@@ -38,6 +34,14 @@ namespace Wiremock_Recording.Test
                     AllowAutoRedirect = true,
                 }
             });
+        }
+
+        private static void ClearPreviousStaticMappings()
+        {
+            if (!Directory.Exists(Folder)) return;
+            
+            var files = Directory.GetFiles(Folder);
+            foreach (var filePath in files) File.Delete(filePath);
         }
 
         [OneTimeTearDown]

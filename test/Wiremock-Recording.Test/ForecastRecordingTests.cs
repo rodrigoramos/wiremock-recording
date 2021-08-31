@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 using System.Net.Http;
+using System.Net.Http.Json;
+using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Lambda3.AspNetCore.Mvc.Testing;
@@ -22,14 +24,14 @@ namespace Wiremock_Recording.Test
         {
             ClearPreviousStaticMappings();
 
-            _factory = new WebApplicationFactory<Startup>(8000);
+            // _factory = new WebApplicationFactory<Startup>(40402);
             _mockServer = WireMockServer.Start(new WireMockServerSettings
             {
                 Urls = new[] {"http://localhost:9095/"},
                 ProxyAndRecordSettings = new ProxyAndRecordSettings
                 {
                     SaveMapping = true,
-                    Url = "http://localhost:8000/WeatherForecast",
+                    Url = "http://localhost:5000/WeatherForecast",
                     SaveMappingForStatusCodePattern = "2xx",
                     AllowAutoRedirect = true,
                 }
@@ -50,7 +52,7 @@ namespace Wiremock_Recording.Test
             _mockServer.SaveStaticMappings(Folder);
             _mockServer.Stop();
             
-            _factory.Dispose();
+            _factory?.Dispose();
         }
 
         [Test]
@@ -74,6 +76,26 @@ namespace Wiremock_Recording.Test
 
             var result = await client.GetAsync("http://localhost:9095/WeatherForecast/tomorrow");
 
+            result.Should().Be200Ok();
+        }
+
+        [Test]
+        public async Task RegisterCity()
+        {
+            using var client = new HttpClient();
+            var registerModel = new RegisterCityRequestModel
+            {
+                CityCode = 12,
+                CityName = "Sao Paulo"
+            };
+
+            var content =  "{\"cityName\":\"São Paulo\",\"cityCode\":12}";
+            var strContent = new StringContent(content, Encoding.UTF8, "application/json");
+
+            var result = await client.PostAsync(
+                "http://localhost:9095/WeatherForecast/register-city",
+                strContent);
+            
             result.Should().Be200Ok();
         }
     }

@@ -1,5 +1,5 @@
 {
-  "Guid": "f6a4a875-40ad-4ac3-84f5-927f041fefa0",
+  "Guid": "21b64fb4-e4ec-42e9-8aec-acc6b47ff070",
   "Title": "",
   "Request": {
     "Path": {
@@ -30,14 +30,14 @@
   "Response": {
     "StatusCode": 200,
     "BodyAsJson": {
-      "date": "2021-08-12T11:08:22.9235102-03:00",
-      "temperatureC": 27,
-      "temperatureF": 80,
-      "summary": "Chilly"
+      "date": "2021-08-12T14:12:38.9670067-03:00",
+      "temperatureC": 21,
+      "temperatureF": 69,
+      "summary": "Sweltering"
     },
     "Headers": {
       "Content-Type": "application/json; charset=utf-8",
-      "Date": "Wed, 11 Aug 2021 14:08:22 GMT",
+      "Date": "Wed, 11 Aug 2021 17:12:38 GMT",
       "Server": "Kestrel",
       "Transfer-Encoding": "chunked"
     }

@@ -47,5 +47,11 @@ namespace Wiremock_Recording.Server.Api.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             };
         }
+
+        [HttpPost("register-city")]
+        public IActionResult RegisterCity([FromBody] RegisterCityRequestModel model)
+        {
+            return Ok();
+        }
     }
 }

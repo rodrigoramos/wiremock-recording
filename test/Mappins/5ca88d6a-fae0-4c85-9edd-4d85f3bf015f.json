@@ -1,5 +1,5 @@
 {
-  "Guid": "3bc36445-a2b4-4cda-a69f-ea2094e54e83",
+  "Guid": "5ca88d6a-fae0-4c85-9edd-4d85f3bf015f",
   "Title": "",
   "Request": {
     "Path": {
@@ -31,39 +31,39 @@
     "StatusCode": 200,
     "BodyAsJson": [
       {
-        "date": "2021-08-12T11:08:22.8444774-03:00",
-        "temperatureC": 51,
-        "temperatureF": 123,
-        "summary": "Scorching"
+        "date": "2021-08-12T14:12:38.9138772-03:00",
+        "temperatureC": 46,
+        "temperatureF": 114,
+        "summary": "Hot"
       },
       {
-        "date": "2021-08-13T11:08:22.8446275-03:00",
-        "temperatureC": 6,
-        "temperatureF": 42,
+        "date": "2021-08-13T14:12:38.9139856-03:00",
+        "temperatureC": 13,
+        "temperatureF": 55,
         "summary": "Freezing"
       },
       {
-        "date": "2021-08-14T11:08:22.8446284-03:00",
-        "temperatureC": 51,
-        "temperatureF": 123,
+        "date": "2021-08-14T14:12:38.9139863-03:00",
+        "temperatureC": 29,
+        "temperatureF": 84,
         "summary": "Sweltering"
       },
       {
-        "date": "2021-08-15T11:08:22.8446286-03:00",
-        "temperatureC": 54,
-        "temperatureF": 129,
-        "summary": "Scorching"
+        "date": "2021-08-15T14:12:38.9139865-03:00",
+        "temperatureC": 38,
+        "temperatureF": 100,
+        "summary": "Chilly"
       },
       {
-        "date": "2021-08-16T11:08:22.8446288-03:00",
-        "temperatureC": -4,
-        "temperatureF": 25,
+        "date": "2021-08-16T14:12:38.9139866-03:00",
+        "temperatureC": 44,
+        "temperatureF": 111,
         "summary": "Hot"
       }
     ],
     "Headers": {
       "Content-Type": "application/json; charset=utf-8",
-      "Date": "Wed, 11 Aug 2021 14:08:22 GMT",
+      "Date": "Wed, 11 Aug 2021 17:12:38 GMT",
       "Server": "Kestrel",
       "Transfer-Encoding": "chunked"
     }
